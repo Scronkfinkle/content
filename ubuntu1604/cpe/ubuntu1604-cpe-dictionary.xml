@@ -37,6 +37,11 @@
             <!-- the check references an OVAL file that contains an inventory definition -->
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="filename">installed_env_has_pam_package</check>
       </cpe-item>
+      <cpe-item name="cpe:/a:login">
+            <title xml:lang="en-us">Package login is installed</title>
+            <!-- the check references an OVAL file that contains an inventory definition -->
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="filename">installed_env_has_login_package</check>
+      </cpe-item>
       <cpe-item name="cpe:/a:shadow-utils">
             <title xml:lang="en-us">Package shadow-utils is installed</title>
             <!-- the check references an OVAL file that contains an inventory definition -->
