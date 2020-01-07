@@ -38,4 +38,8 @@ ocil: |-
     <pre>$ sudo grep -i "FAIL_DELAY" /etc/login.defs
     fail_delay <sub idref="var_accounts_fail_delay" /></pre>
 
+{{% if product in ["ubuntu1404", "ubuntu1604", "ubuntu1804", "debian8", "debian9", "debian10"] %}} 
+platform: login
+{{% else %}} 
 platform: shadow-utils
+{{% endif %}} 

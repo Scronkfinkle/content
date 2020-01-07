@@ -43,4 +43,10 @@ ocil: |-
     <pre># grep -i "UMASK" /etc/login.defs
     umask <sub idref="var_accounts_user_umask" /></pre>
 
+
+{{% if product in ["ubuntu1404", "ubuntu1604", "ubuntu1804", "debian8", "debian9", "debian10"] %}} 
+platform: login
+{{% else %}} 
 platform: shadow-utils
+{{% endif %}} 
+

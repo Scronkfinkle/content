@@ -63,4 +63,10 @@ ocil: |-
     <pre>$ grep "INACTIVE" /etc/default/useradd
     INACTIVE=<sub idref="var_account_disable_post_pw_expiration" /></pre>
 
+
+{{% if product in ["ubuntu1404", "ubuntu1604", "ubuntu1804", "debian8", "debian9", "debian10"] %}} 
+platform: login
+{{% else %}} 
 platform: shadow-utils
+{{% endif %}} 
+

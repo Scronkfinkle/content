@@ -33,4 +33,10 @@ ocil: |-
     <pre>$ sudo grep create_home /etc/login.defs</pre>
     <br /><br />
 
+
+{{% if product in ["ubuntu1404", "ubuntu1604", "ubuntu1804", "debian8", "debian9", "debian10"] %}} 
+platform: login
+{{% else %}} 
 platform: shadow-utils
+{{% endif %}} 
+
